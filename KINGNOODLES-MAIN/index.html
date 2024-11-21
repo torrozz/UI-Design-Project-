@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KING'S NOODLES - WEBSITE</title>
+    <!-- Boostrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container custom-container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/bb.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#heroSlider">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+
+                </ul>
+                <a href="#reservation" class="btn btn-brand ms-lg-3">Order Online</a>
+                <a href="login_register.html" class="btn btn-brand ms-lg-3">Login / Register</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO KING'S NOODLES</h6>
+                            <h1 class="display-1 my-3 fw-bold text-white">Traditional & Tasty Noodle from the Heart</h1>
+                            <a href="#reservation" class="btn btn-brand">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO KING'S NOODLES</h6>
+                            <h1 class="display-1 my-3 fw-bold text-white">Fresh & Tasty Food</h1>
+                            <a href="#" class="btn btn-brand">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="./assets/images/about2.png" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About us</h1>
+                    <div class="divider my-4"></div>
+                    <p>King's Noodles brings together the finest Vietnamese noodle dishes, from traditional pho and refreshing bun to flavorful hu tieu. We take pride in introducing you to the unique tastes of each region, offering an authentic culinary experience that captures the true spirit of Vietnam.</p>
+                    <p>At King's Noodles, each bowl of pho, bun, or hu tieu is carefully crafted to preserve the traditional flavors of Vietnam. We aim to take you on a journey through our country’s rich culinary heritage, bringing you closer to the essence of each noodle dish across this beautiful land.</p>
+                    <a href="#menu" class="btn btn-brand">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Explore Our Menu</h1>
+                    <p>Discover the heart of Vietnam in every bowl—explore our menu today!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="true">Breakfast</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch"
+                        type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+                        type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                    tabindex="0">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_01.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Miếng Gà</a></h5>
+                                    <p class="small">Glass noodles with tender chicken, topped with fresh herbs and crispy shallots in a savory broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_02.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Phở Bò</a></h5>
+                                    <p class="small">Rice noodles with tender beef slices, topped with fresh herbs and a flavorful broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_03.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Bò Huế</a></h5>
+                                    <p class="small">Thick rice noodles with spicy beef broth, served with tender beef, fresh herbs, and chili.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_04.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Thịt Nướng</a></h5>
+                                    <p class="small">Vermicelli noodles with grilled pork, fresh herbs, pickled vegetables, and a savory fish sauce.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_05.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Mắm</a></h5>
+                                    <p class="small">Vermicelli noodles with fermented fish broth, served with seafood, pork, fresh herbs, and vegetables.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_06.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bánh Canh Cua</a></h5>
+                                    <p class="small">Thick tapioca noodles in a rich crab broth, topped with crab meat, shrimp, and fresh herbs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_07.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Măng Gà</a></h5>
+                                    <p class="small">Vermicelli noodles with tender chicken and bamboo shoots in a savory, aromatic broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_08.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Hủ Tiếu Nam Vang</a></h5>
+                                    <p class="small">Chewy rice noodles in a flavorful pork and seafood broth, topped with shrimp, pork, and fresh herbs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-breakfast" role="tabpanel"
+                    aria-labelledby="pills-breakfast-tab" tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_01.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Miếng Gà</a></h5>
+                                    <p class="small">Glass noodles with tender chicken, topped with fresh herbs and crispy shallots in a savory broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_02.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Phở Bò</a></h5>
+                                    <p class="small">Rice noodles with tender beef slices, topped with fresh herbs and a flavorful broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_04.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Thịt Nướng</a></h5>
+                                    <p class="small">Thick rice noodles with spicy beef broth, served with tender beef, fresh herbs, and chili.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_08.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Hủ Tiếu Nam Vang</a></h5>
+                                    <p class="small">Chewy rice noodles in a flavorful pork and seafood broth, topped with shrimp, pork, and fresh herbs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_01.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Miếng Gà</a></h5>
+                                    <p class="small">Glass noodles with tender chicken, topped with fresh herbs and crispy shallots in a savory broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_02.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Phở Bò</a></h5>
+                                    <p class="small">Rice noodles with tender beef slices, topped with fresh herbs and a flavorful broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_04.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Thịt Nướng</a></h5>
+                                    <p class="small">Thick rice noodles with spicy beef broth, served with tender beef, fresh herbs, and chili.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_08.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Hủ Tiếu Nam Vang</a></h5>
+                                    <p class="small">Chewy rice noodles in a flavorful pork and seafood broth, topped with shrimp, pork, and fresh herbs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_01.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Miếng Gà</a></h5>
+                                    <p class="small">Glass noodles with tender chicken, topped with fresh herbs and crispy shallots in a savory broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_02.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Phở Bò</a></h5>
+                                    <p class="small">Rice noodles with tender beef slices, topped with fresh herbs and a flavorful broth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_04.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Bún Thịt Nướng</a></h5>
+                                    <p class="small">Thick rice noodles with spicy beef broth, served with tender beef, fresh herbs, and chili.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_08.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Hủ Tiếu Nam Vang</a></h5>
+                                    <p class="small">Chewy rice noodles in a flavorful pork and seafood broth, topped with shrimp, pork, and fresh herbs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Why to choose us?</h1>
+                    <p class="text-white">Authentic flavors, quality ingredients, and a passion for Vietnamese noodles—experience the difference with us!
+                        eveniet nobis accusantium?</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-wifi-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                        <p class="text-white">Enjoy complimentary WiFi while savoring every noodle dish at King of Noodle.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-timer-2-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Fast Delivery</h4>
+                        <p class="text-white">Craving noodles? Get them fast and fresh with our speedy delivery service.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Friendly Staff</h4>
+                        <p class="text-white">Our friendly staff is here to make your noodle experience delightful and memorable.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-shield-star-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Highly Rated</h4>
+                        <p class="text-white">Join the countless satisfied diners—experience our highly rated dishes today.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Our Team Members</h1>
+                    <p>Meet our passionate team dedicated to crafting the perfect noodle experience for you.</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_01.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Chef1</h4>
+                            <p class="mb-0">Main Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_02.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Chef2</h4>
+                            <p class="mb-0">Main Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_03.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Chef3</h4>
+                            <p class="mb-0">Main Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_01.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Chef4</h4>
+                            <p class="mb-0">Main Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section id="reviews" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Our Client Saying</h1>
+                    <p class="text-white">Hear what our delighted customers have to say about their noodle journey with usp>
+                </div>
+            </div>
+
+            <div id="reviewSlider" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">The moment I took my first bite of pho, I was transported back to Vietnam! The flavors are authentic, and the noodles are perfectly cooked. The friendly staff made the experience even better. I can't recommend King of Noodle enough.</p>
+                                    <div class="person mt-4">
+                                        <img src="./assets/images/gordon2.jpg" alt="">
+                                        <h4 class="mb-0 mt-2">Gordon Ramsay</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">King of Noodle is my go-to spot for a delicious bowl of bun! The freshness of the ingredients and the attention to detail in every dish truly set them apart. It's not just a meal; it's an experience.</p>
+                                    <div class="person mt-4">
+                                        <img src="./assets/images/chefha.jpg" alt="">
+                                        <h4 class="mb-0 mt-2">Christine Hà
+                                            </h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Book Your Table</h1>
+                    <p>Reserve your spot and dive into the flavors of Vietnam’s finest noodles!</p>
+                </div>
+            </div>
+            <form action="submit_form.php" method="POST" class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="full_name" class="form-control" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="date" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="time" class="form-control" placeholder="Time" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea name="message" cols="30" rows="4" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-group text-center col-md-12">
+                            <button type="submit" class="btn btn-brand">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Insta Posts -->
+    <div class="row g-0">
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/1.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/5.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/3.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/4.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Blog Posts</h1>
+                    <p>Discover culinary tips, recipes, and stories that bring the flavors of Vietnam to life.</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/item_01.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted: 1 Nov, 2024</p>
+                            <h4><a href="#">How to make Miếng Gà
+                                </a></h4>
+                            <p>Dive into essential cooking techniques and secrets for enhancing flavor in every dish.</p>
+                            <a href="https://netspace.edu.vn/cach-lam-mien-ga-dai-ngon-ngot-nuoc/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/item_02.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted: 1 Nov, 2024</p>
+                            <h4><a href="#">How to make Phở Bò
+                                </a></h4>
+                            <p>Learn the art of balancing spices and ingredients to create mouthwatering meals.</p>
+                            <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-nau-pho-bo-ha-noi-962092?srsltid=AfmBOor_ey4BBtqss-rn-7L7_ZuF4rGGG0kmMH9OFECeXcYTmWd2kl8b">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/item_03.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted: 1 Nov, 2024</p>
+                            <h4><a href="#">How to make Bún Bò Huế
+                                </a></h4>
+                            <p>Explore tips for selecting fresh ingredients that bring out the best in your recipes.</p>
+                            <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-nau-bun-bo-hue-ngon-tai-nha-964495?srsltid=AfmBOoqC9zwuybmgtzeOMul8saOsSuSMPeBL9ts_7Y9CmFzC_Adry8Fa">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/item_04.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted: 1 Nov, 2024</p>
+                            <h4><a href="#">How to make Bún Thịt Nướng
+                                </a></h4>
+                            <p>Master simple methods to elevate everyday dishes into delightful culinary experiences.</p>
+                            <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-lam-bun-thit-nuong-ngon-964440?srsltid=AfmBOorIXO0eTDWonIGHOJmTZ1cOzAD1iynUDeXuaFaC8XNDGPxITzb9">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-cover">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <img src="./assets/images/LOGO_WHITE.svg" class="mb-4" alt="">
+                        <p>Bringing you delightful flavors and a memorable dining experience, our restaurant is dedicated to serving exceptional cuisine crafted with care.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                            <a href="#"><i class="ri-google-play-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ms-auto">
+                        <h6 class="text-white mb-4">CONTACT</h6>
+                        <p class="mb-1">P:0387714149</p>
+                        <p class="mb-1">E:dat.2174802010755@vanlanguni.vn</p>
+                        <p class="mb-0">A:69/68 Dang Thuy Tram Street, Ward 13, Binh Thanh District, Ho Chi Minh City</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-white mb-4">OPENING HOURS</h6>
+                        <p class="mb-1">Monday-Friday : 08:00 - 22:00</p>
+                        <p>Saturday-Sunday : 08:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row gy-3 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Copyrights all rights reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed By <a
+                                href="https://www.facebook.com/profile.php?id=100016926674653&locale=vi_VN">LOUIS NGUYEN</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

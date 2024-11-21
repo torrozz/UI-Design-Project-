@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.form-toggle button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.form-toggle button:hover {
+    background-color: #F58d17;
+    color: #fff;
+}
+
+.form-toggle button.active {
+    background-color: #F58d17;
+    color: #fff;
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content h2 {
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #555;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.forgot-password:hover {
+    color: #F58d17;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F58d17;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background-color: #d37810;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+p a {
+    color: #F58d17;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
